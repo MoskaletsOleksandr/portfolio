@@ -21,7 +21,11 @@
   </head>
   <body>
     <header class="header">
-      <a href="/index.html" lang="en" class="logo header__logo">My portfolio</a>
+      <a href="/index.html" lang="en" class="logo header__logo">
+        <span class="logo-letter">M</span>
+        <span class="logo-letter">O</span>
+        <span class="logo-letter">O</span></a
+      >
       <nav class="nav header__nav">
         <ul class="nav__list">
           <li class="nav__item"><a href="#" class="nav__link">home</a></li>
@@ -35,46 +39,58 @@
     <main class="main">
       <section class="hero">
         <div class="hero__content">
-          <p class="hero__title">Hello, I'm</p>
-          <h1 class="hero__subtitle">Oleksandr Moskalets</h1>
+          <p class="hero__greatings"><span class="hero__greatings-accent">Hello</span>, I'm</p>
+          <h1 class="hero__title">Oleksandr Moskalets</h1>
           <h2 class="hero__description">Fullstack developer</h2>
-          <button class="hero__cta-button">Get in touch</button>
+          <button class="hero__cta-button button">Get in touch</button>
         </div>
         <div class="hero__social-links">
-          <ul class="socials">
+          <ul class="socials socials--column">
             <li class="socials__item">
               <a
-                class="socials__item-link link socials__item-link--bg-gray-col-white"
+                class="socials__item-link link"
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
               >
                 <svg class="socials__item-icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  <use href="./images/telegram.svg"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
               <a
-                class="socials__item-link link socials__item-link--bg-gray-col-white"
+                class="socials__item-link link"
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
               >
                 <svg class="socials__item-icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-GitHub"></use>
+                  <use href="./images/github1.svg"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
               <a
-                class="socials__item-link link socials__item-link--bg-gray-col-white"
+                class="socials__item-link link"
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
               >
                 <svg class="socials__item-icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  <use href="./images/linkedin.svg"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a
+                class="socials__item-link link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="socials__item-icon" width="20" height="20">
+                  <use href="./images/instagram.svg"></use>
                 </svg>
               </a>
             </li>
@@ -141,7 +157,7 @@
             <h3 class="stacks__actions-title">
               let’s work together on Your Next Project HIRE ME NOW Download CV
             </h3>
-            <button class="stacks__hire-button">HIRE ME NOW</button>
+            <button class="stacks__hire-button button">HIRE ME NOW</button>
             <button type="button" class="stacks__download-button">
               <svg class="stacks__download-icon" width="16" height="16">
                 <use href="./images/vector-btn.svg"></use>
@@ -389,7 +405,7 @@
                   rel="noopener noreferrer nofollow"
                 >
                   <svg class="footer__social-icon" width="20" height="20">
-                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                    <use href="./images/"></use>
                   </svg>
                 </a>
               </li>
@@ -459,7 +475,7 @@
                 required
               ></textarea>
             </label>
-            <button type="submit" class="footer__form-button">send message</button>
+            <button type="submit" class="footer__form-button button">send message</button>
           </form>
         </div>
       </div>
