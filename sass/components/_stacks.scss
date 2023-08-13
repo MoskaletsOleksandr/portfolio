@@ -1,0 +1,50 @@
+.stacks {
+    background-color: #F7F7F7;
+}
+
+.stacks__list {
+    display: flex;
+    gap: 27px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin-bottom: 48px;
+}
+
+.stacks__item {}
+
+.stacks__icon {
+}
+
+.stacks__actions {
+    background-color: var(--secondary-background-color);
+
+    padding: 50px 80px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.stacks__actions-title {
+    color: var(--light-text-color);
+    text-align: center;
+    font-family: var(--heading-font);
+    font-size: 32px;
+    font-weight: var(--text-font-weight);
+    text-transform: capitalize;
+
+    margin-bottom: 40px;
+}
+
+.stacks__hire-button {
+    margin-bottom: 19px;
+}
+
+.stacks__download-button {
+    background-color: transparent;
+    color: var(--btn-text);
+    border: none;
+}
+
+.stacks__download-icon {}

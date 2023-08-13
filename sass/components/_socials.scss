@@ -1,14 +1,13 @@
-/* Стилі для соціальних посилань */
-.hero__social-links {
-}
+.hero__social-links {}
 
 .socials {
     display: flex;
     gap: 32px;
+}
 
-    &--column {
-        flex-direction: column;
-    }
+.socials--column {
+    flex-direction: column;
+}
 
 .socials__item {
     width: 42px;
@@ -21,17 +20,16 @@
     height: 100%;
     align-items: center;
     justify-content: center;
-    
     border-radius: 50%;
     background-color: var(--icons-background-color);
     color: var(--icons-color);
 }
 
-// .socials__item-link--bg-gray-col-white {
-//     background-color: gray;
-//     color: white;
-//     /* Додайте стилі для посилання з фоном сірого кольору тут */
-// }
+.socials__item-link--bg-gray-col-white {
+    background-color: gray;
+    color: white;
+    /* Додайте стилі для посилання з фоном сірого кольору тут */
+}
 
 .socials__item-icon {
     width: 20px;

@@ -19,11 +19,15 @@ body {
     overflow: hidden;
 }
 
+.section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
 .container {
     margin: 0 auto;
     padding-left: 16px;
     padding-right: 16px;
-    background-color: tan;
 
     @include mobile {
         width: 480px;
@@ -36,7 +40,27 @@ body {
     @include desktop {
         width: 1140px;
     }
+}
 
+.title {
+    margin-top: 60px;
+    display: flex;
+    gap: 17px;
+    align-items: center;
+    
+    text-transform: uppercase;
+    color: var(--dark-text-color);
+    font-family: var(--heading-font);
+    font-size: 32px;
+    font-weight: var(--heading-font-weight);
+    line-height: var(--heading-line-height);
+}
+
+.title-accent {
+    font-family: var(--heading-font);
+    color: var(--accent-text-color);
+    font-size: 64px;
+    font-weight: 400;
 }
 
 .button {

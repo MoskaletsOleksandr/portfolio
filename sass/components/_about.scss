@@ -1,0 +1,51 @@
+.about {}
+
+.container {}
+
+.about__content {}
+
+.about__stats {
+    display: flex;
+    flex-direction: column;
+}
+
+.about__stat {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: auto;
+
+    &:nth-child(2n) {
+        margin-left: 0;
+        margin-right: auto;
+    }
+}
+
+.about__stat-image {}
+
+.about__stat-info {
+    display: flex;
+    gap: 12px;
+    align-items: end;
+}
+
+.abut__stat-text{
+    color: var(--dark-text-color);
+    font-family: var(--text-font);
+    font-size: 14px;    
+    font-weight: 700;
+    line-height: var(--secondary-text-line-height);
+}
+
+.about__description {
+    margin-left: 76px;
+
+    font-family: var(--text-font);
+    font-size: 12px;
+    font-weight: var(--text-font-weight);
+    line-height: var(--primary-text-line-height);
+
+    &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+}
