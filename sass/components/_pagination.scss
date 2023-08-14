@@ -1,0 +1,19 @@
+.pagination {
+    display: flex;
+    gap: 24px;
+    align-self: end;
+}
+
+.pagination-item {}
+
+.pagination-btn {
+    width: 40px;
+    height: 40px;
+
+    border: none;
+    background-color: var(--btn-color);
+}
+
+.pagination-icon {
+    fill: var(--icons-color);
+}

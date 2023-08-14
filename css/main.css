@@ -157,6 +157,23 @@ body {
   display: none;
 }
 
+.pagination {
+  display: flex;
+  gap: 24px;
+  align-self: end;
+}
+
+.pagination-btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: var(--btn-color);
+}
+
+.pagination-icon {
+  fill: var(--icons-color);
+}
+
 .logo {
   display: block;
   font-family: var(--heading-font);
@@ -386,23 +403,6 @@ body {
   text-transform: uppercase;
 }
 
-.portfolio__pagination {
-  display: flex;
-  gap: 24px;
-  margin-left: auto;
-}
-
-.portfolio__pagination-btn {
-  width: 40px;
-  height: 40px;
-  border: none;
-  background-color: var(--btn-color);
-}
-
-.portfolio__pagination-icon {
-  fill: var(--icons-color);
-}
-
 .portfolio__list {
   display: flex;
   flex-wrap: wrap;
@@ -462,4 +462,93 @@ body {
   font-size: 16px;
   font-weight: var(--heading-font-weight);
   color: var(--light-title-color);
+}
+
+.testimonial__image {
+  margin-bottom: 32px;
+}
+
+.testimonial__info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.testimonial__text {
+  color: var(--dark-text-color);
+  margin-bottom: 32px;
+}
+
+.testimonial__author {
+  font-weight: 400;
+  margin-bottom: 45px;
+}
+
+.testimonial__name {
+  color: var(--accent-text-color);
+  font-size: 16px;
+  font-weight: var(--text-font-weight);
+}
+
+.footer {
+  background-color: var(--secondary-background-color);
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1200px) {
+  .footer-container {
+    flex-direction: row;
+  }
+}
+
+.footer-title {
+  color: var(--light-title-color);
+}
+
+.footer__contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  margin-top: 50px;
+}
+
+.footer__contact-link {
+  display: flex;
+  gap: 16px;
+}
+
+.footer__contact-type {
+  margin-bottom: 9px;
+  font-size: 16px;
+  color: var(--light-text-color);
+}
+
+.footer__contact-detail {
+  color: var(--primary-text-color);
+}
+
+.footer__socials {
+  margin-top: 47px;
+  margin-bottom: 47px;
+}
+
+.footer__form-info {
+  font-family: var(--heading-font);
+  font-weight: var(--heading-font-weight);
+  font-size: 20px;
+  color: var(--light-text-color);
+}
+.footer__form-info--accent {
+  color: var(--accent-text-color);
+}
+.footer__form-info::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: var(--light-text-color);
+  margin-top: 24px;
 }/*# sourceMappingURL=main.css.map */

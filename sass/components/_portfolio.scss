@@ -24,27 +24,6 @@
     text-transform: uppercase
 }
 
-.portfolio__pagination {
-    display: flex;
-    gap: 24px;
-    margin-left: auto;
-}
-
-.portfolio__pagination-item {
-}
-
-.portfolio__pagination-btn{
-    width: 40px;
-    height: 40px;
-
-    border: none;
-    background-color: var(--btn-color);
-}
-
-.portfolio__pagination-icon {
-    fill: var(--icons-color);
-}
-
 .portfolio__list {
     display: flex;
     flex-wrap: wrap;
