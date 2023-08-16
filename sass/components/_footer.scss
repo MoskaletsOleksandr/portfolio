@@ -53,38 +53,5 @@
     margin-bottom: 47px;
 }
 
-.footer__form-wrapper {}
 
-.footer__form-info {
-    font-family: var(--heading-font);
-    font-weight: var(--heading-font-weight);
-    font-size: 20px;
-    color: var(--light-text-color);
 
-    &--accent {
-        color: var(--accent-text-color);
-    }
-
-    &::after {
-        content: "";
-        display: block;
-        width: 100%;
-        height: 1px;
-        background-color: var(--light-text-color);
-        margin-top: 24px;
-    }
-}
-
-.footer__form {}
-
-.footer__form-fields {}
-
-.footer__form-label {}
-
-.footer__form-input {}
-
-.footer__form-textarea {}
-
-.footer__form-button {}
-
-.button {}

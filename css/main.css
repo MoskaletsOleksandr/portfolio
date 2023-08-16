@@ -107,7 +107,6 @@ body {
 }
 
 .title {
-  margin-top: 60px;
   display: flex;
   gap: 17px;
   align-items: center;
@@ -136,6 +135,7 @@ body {
   font-family: var(--text-font);
   font-size: 12px;
   font-weight: bold;
+  text-transform: uppercase;
   cursor: pointer;
 }
 .button:hover, .button:focus {
@@ -535,20 +535,65 @@ body {
   margin-bottom: 47px;
 }
 
-.footer__form-info {
+.form-info {
   font-family: var(--heading-font);
   font-weight: var(--heading-font-weight);
   font-size: 20px;
   color: var(--light-text-color);
 }
-.footer__form-info--accent {
+.form-info--accent {
   color: var(--accent-text-color);
 }
-.footer__form-info::after {
+.form-info::after {
   content: "";
   display: block;
   width: 100%;
   height: 1px;
   background-color: var(--light-text-color);
   margin-top: 24px;
+}
+
+.form {
+  margin-top: 24px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+
+.form-label {
+  margin-bottom: 12px;
+  color: var(--light-text-color);
+}
+
+.form-input {
+  width: 100%;
+  height: 54px;
+  padding: 19px 16px;
+  background-color: var(--icons-background-color);
+  outline: transparent;
+  border: none;
+  border-radius: 2px;
+  font-weight: 400;
+  color: var(--light-text-color);
+  line-height: var(--secondary-text-line-height);
+}
+.form-input::-moz-placeholder {
+  font-weight: 400;
+  font-size: 12px;
+}
+.form-input:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 12px;
+}
+.form-input::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.form-textarea {
+  resize: none;
+  height: 124px;
 }/*# sourceMappingURL=main.css.map */

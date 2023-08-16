@@ -43,7 +43,6 @@ body {
 }
 
 .title {
-    margin-top: 60px;
     display: flex;
     gap: 17px;
     align-items: center;
@@ -76,6 +75,7 @@ body {
     font-family: var(--text-font);
     font-size: 12px;
     font-weight: bold;
+    text-transform: uppercase;
 
     cursor: pointer;
 
