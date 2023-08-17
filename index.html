@@ -21,26 +21,27 @@
   </head>
   <body>
     <header class="header">
-      <a href="/index.html" lang="en" class="logo header__logo">
-        <span class="logo-letter">M</span>
-        <span class="logo-letter">O</span>
-        <span class="logo-letter">O</span></a
-      >
-      <nav class="nav header__nav">
-        <ul class="nav__list">
-          <li class="nav__item"><a href="#" class="nav__link">home</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">about</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">service</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">portfolio</a></li>
-        </ul>
-        <a href="" class="nav__link nav__link--contact">contacts</a>
-      </nav>
+      <div class="container header-container">
+        <a href="/index.html" lang="en" class="logo header__logo">
+          <span class="logo-letter">M</span>
+          <span class="logo-letter">O</span></a
+        >
+        <nav class="nav header__nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#" class="nav__link nav__link--current">home</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">about</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">service</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">portfolio</a></li>
+          </ul>
+        </nav>
+        <a href="" class="nav__link nav__link--contact">contact</a>
 
-      <button class="mobile-menu__btn--open">
-        <svg class="mobile-menu__icon--open" width="21px" height="13px">
-          <use href="./images/symbol-defs.svg#icon-burger"></use>
-        </svg>
-      </button>
+        <button class="mobile-menu__btn--open">
+          <svg class="mobile-menu__icon--open" width="21px" height="13px">
+            <use href="./images/symbol-defs.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
     </header>
     <main class="main">
       <section class="hero">
@@ -125,16 +126,18 @@
                 <img src="./images/about2.jpg" alt="" class="about__stat-image" />
               </li>
             </ul>
-            <h2 class="title"><span class="title-accent">01</span>about me</h2>
-            <p class="about__description">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-              officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
-              amet.
-            </p>
-            <p class="about__description">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-              officia consequat duis enim velit mollit.
-            </p>
+            <div class="about__info">
+              <h2 class="title"><span class="title-accent">01</span>about me</h2>
+              <p class="about__description">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+                amet.
+              </p>
+              <p class="about__description">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                officia consequat duis enim velit mollit.
+              </p>
+            </div>
           </div>
         </div>
       </section>

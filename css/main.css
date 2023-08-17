@@ -149,13 +149,58 @@ body {
 }
 
 .header {
-  position: relative;
+  position: fixed;
+  width: 100%;
   padding: 35px 16px 0px 16px;
-  background-color: #111214;
+  background-color: transparent;
+}
+
+.header-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav {
   display: none;
+}
+@media (min-width: 1200px) {
+  .nav {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  gap: 54px;
+}
+
+.nav__link {
+  font-size: 12px;
+  color: var(--nav-link-color);
+  text-transform: uppercase;
+}
+.nav__link--current {
+  color: var(--active-link-color);
+}
+.nav__link--contact {
+  color: var(--contact-link-color);
+  display: none;
+}
+@media (min-width: 1200px) {
+  .nav__link--contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 92px;
+    height: 39px;
+    border: 1px solid #FE390C;
+    border-radius: 4px;
+  }
 }
 
 .pagination {
@@ -183,19 +228,19 @@ body {
   line-height: var(--heading-font-height);
 }
 
+.logo-letter {
+  font-size: 40px;
+}
 .logo-letter:nth-child(1) {
   color: #ffffff;
 }
 .logo-letter:nth-child(2) {
-  color: rgba(169, 169, 170, 0.5);
-}
-.logo-letter:nth-child(3) {
   color: #FE390C;
 }
 
 .hero {
   background-color: var(--secondary-background-color);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Oleksandr_Moskalets_photo.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(47, 48, 58, 0.1)), url(../images/hero-picture.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -217,6 +262,11 @@ body {
   color: var(--light-title-color);
   margin-bottom: 16px;
 }
+@media (min-width: 1200px) {
+  .hero__greatings {
+    margin-bottom: 10px;
+  }
+}
 
 .hero__greatings-accent {
   color: var(--accent-title-color);
@@ -231,6 +281,7 @@ body {
 @media (min-width: 1200px) {
   .hero__title {
     font-size: 130px;
+    margin-bottom: 12px;
   }
 }
 
@@ -278,9 +329,24 @@ body {
   color: var(--icons-color);
 }
 
+@media (min-width: 1200px) {
+  .about__content {
+    display: flex;
+    gap: 65px;
+  }
+}
+.about__content > * {
+  flex: 1;
+}
+
 .about__stats {
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 1200px) {
+  .about__stats {
+    flex-direction: row;
+  }
 }
 
 .about__stat {
@@ -609,7 +675,7 @@ body {
 
 .mobile-menu__btn--open {
   position: absolute;
-  top: 38px;
+  top: 0px;
   right: 16px;
   display: flex;
   justify-content: center;
@@ -619,6 +685,11 @@ body {
   background-color: transparent;
   border: 2px solid #57595d;
   border-radius: 2px;
+}
+@media (min-width: 1200px) {
+  .mobile-menu__btn--open {
+    display: none;
+  }
 }
 
 .mobile-menu__icon--open {

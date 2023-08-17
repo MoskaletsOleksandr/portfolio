@@ -2,11 +2,23 @@
 
 .container {}
 
-.about__content {}
+.about__content {
+    @include desktop {
+        display: flex;
+        gap: 65px;
+    }
+
+    & >* {
+        flex: 1;
+    }
+}
 
 .about__stats {
     display: flex;
     flex-direction: column;
+    @include desktop {
+        flex-direction: row;
+    }
 }
 
 .about__stat {
@@ -36,6 +48,8 @@
     font-weight: 700;
     line-height: var(--secondary-text-line-height);
 }
+
+.about__info {}
 
 .about__description {
     margin-left: 76px;

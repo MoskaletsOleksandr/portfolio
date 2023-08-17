@@ -1,6 +1,6 @@
 .mobile-menu__btn--open {
     position: absolute;
-    top: 38px;
+    top: 0px;
     right: 16px;
 
     display: flex;
@@ -11,6 +11,10 @@
     background-color: transparent;
     border: 2px solid #57595d;
     border-radius: 2px;
+
+    @include desktop {
+        display: none;
+        }
 }
 
 .mobile-menu__icon--open {
