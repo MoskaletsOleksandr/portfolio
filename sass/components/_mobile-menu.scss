@@ -1,0 +1,18 @@
+.mobile-menu__btn--open {
+    position: absolute;
+    top: 38px;
+    right: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 47px;
+    height: 35px;
+    background-color: transparent;
+    border: 2px solid #57595d;
+    border-radius: 2px;
+}
+
+.mobile-menu__icon--open {
+    fill: #57595d;
+}
