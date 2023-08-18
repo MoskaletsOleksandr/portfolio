@@ -10,11 +10,19 @@
     display: flex;
     gap: 32px;
     flex-direction: column;
+
+    @include desktop {
+        flex-direction: row;
+    }
 }
 
 .service__item {
     padding: 40px 20px 20px 20px;
     background-color: #F7F7F7;
+
+    &:hover, &:focus {
+        background-color: var(--active-link-color);
+    }
 }
 
 .service__item-content {}
