@@ -22,16 +22,19 @@
     border-radius: 50%;
     background-color: var(--icons-background-color);
     color: var(--icons-color);
-}
 
-.socials__item-link--bg-gray-col-white {
-    background-color: gray;
-    color: white;
-    /* Додайте стилі для посилання з фоном сірого кольору тут */
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--active-link-color);
+    }
 }
 
 .socials__item-icon {
     width: 20px;
     height: 20px;
-    color: var(--icons-color);
+    fill: currentColor;
+
+
 }

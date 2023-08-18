@@ -6,6 +6,14 @@
     align-items: center;
 }
 
+.service-title {
+    margin-bottom: 5px;
+
+    @include desktop {
+        margin-bottom: 55px;
+    }
+}
+
 .service__list {
     display: flex;
     gap: 32px;
@@ -19,8 +27,11 @@
 .service__item {
     padding: 40px 20px 20px 20px;
     background-color: #F7F7F7;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
+        color: var(--light-text-color);
         background-color: var(--active-link-color);
     }
 }
@@ -29,6 +40,11 @@
 
 .service__item-icon {
     margin-bottom: 24px;
+    fill: #FE390C;
+
+    .service__item:hover & {
+        fill: var(--icons-color);
+    }
 }
 
 .service__item-title {
@@ -39,6 +55,11 @@
     font-weight: 700;
     line-height: var(--primary-text-line-height);
     color: var(--dark-title-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .service__item:hover & {
+        color: var(--light-title-color);
+    }
 }
 
 .service__item-description {}

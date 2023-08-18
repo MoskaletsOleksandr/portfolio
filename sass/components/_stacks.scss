@@ -1,9 +1,5 @@
 .stacks {
     background-image: linear-gradient(to bottom, #F7F7F7 50%, var(--primary-background-color) 50%);
-
-    @include desktop {
-        padding-top: 80px;
-    }
 }
 
 .stacks__list {
