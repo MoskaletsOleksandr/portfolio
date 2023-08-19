@@ -2,9 +2,13 @@
     display: flex;
     gap: 24px;
     align-self: end;
-
+    
     @include desktop {
         align-self: center;
+    }
+
+    &--to-end {
+        align-self: end;
     }
 }
 
