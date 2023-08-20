@@ -5,11 +5,11 @@ export const menuContainer = document.querySelector('.js-menu-container');
 export const mobMenuClose = document.querySelector('.js-menu-close');
 
 mobMenuOpen.addEventListener('click', () => {
-  console.log('mobMenuOpen');
   menuContainer.classList.add('is-open');
+  document.body.classList.add('is-menu-open');
 });
 
 mobMenuClose.addEventListener('click', () => {
-  console.log('mobMenuClose');
   menuContainer.classList.remove('is-open');
+  document.body.classList.remove('is-menu-open');
 });

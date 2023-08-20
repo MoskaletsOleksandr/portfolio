@@ -223,16 +223,17 @@ body {
 }
 
 .mob-menu-container {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   z-index: 2;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.3s ease, transform 0.5s ease;
   padding: 15px 32px;
   background-color: rgb(173, 171, 171);
-  overflow: auto;
 }
 @media (min-width: 1200px) {
   .mob-menu-container {
@@ -240,7 +241,12 @@ body {
   }
 }
 .mob-menu-container.is-open {
-  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.is-menu-open {
+  overflow: hidden;
 }
 
 .mob-menu__btn--open {
@@ -290,6 +296,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: auto;
 }
 
 .mob-nav__list {
