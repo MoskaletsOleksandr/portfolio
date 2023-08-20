@@ -2,13 +2,15 @@
     display: block;
     font-family: var(--heading-font);
     font-weight: 700;
-    font-size: 32;
+    font-size: 35px;
     line-height: var(--heading-font-height);
+
+    @include desktop {
+        font-size: 40px;
+    }
 }
 
-.logo-letter {
-    font-size: 40px;
-    
+.logo-letter {    
     &:nth-child(1) {
         color: #ffffff;
     }

@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header header-js">
       <div class="container header-container">
         <a href="/index.html" lang="en" class="logo header__logo">
           <span class="logo-letter">M</span>
@@ -36,18 +36,18 @@
         </nav>
         <a href="" class="nav__link nav__link--contact">contact</a>
 
-        <button class="mob-menu__btn--open">
+        <button class="mob-menu__btn--open js-menu-open">
           <svg class="mob-menu__icon--open" width="21px" height="13px">
             <use href="./images/symbol-defs.svg#icon-burger"></use>
           </svg>
         </button>
 
-        <div class="mob-menu-container">
+        <div class="mob-menu-container js-menu-container">
           <a href="/index.html" lang="en" class="logo header__logo">
             <span class="logo-letter">M</span>
             <span class="logo-letter">O</span></a
           >
-          <button class="mob-menu__btn--close">
+          <button class="mob-menu__btn--close js-menu-close">
             <svg class="mob-menu__icon--close" width="32px" height="32px">
               <use href="./images/symbol-defs.svg#icon-close"></use>
             </svg>
@@ -598,5 +598,7 @@
         </div>
       </div>
     </footer>
+
+    <script type="module" src="./js/script.js"></script>
   </body>
 </html>
