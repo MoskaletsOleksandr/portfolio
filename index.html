@@ -17,6 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -428,26 +429,41 @@
               <h2 class="title testimonial__title">
                 <span class="title-accent">04</span>testomonial
               </h2>
-              <div class="testimonial__info">
-                <p class="testimonial__text">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-                  officia consequat duis enim velit mollit. Exercitation veniam consequat sunt
-                  nostrud amet.
-                </p>
-                <p class="testimonial__author">
-                  <span class="testimonial__name">Esther Howard</span><br />CEO of Adebe
-                </p>
+              <div class="testimonial-slider swiper-container">
+                <div class="testimonial-slider__wrapper swiper-wrapper">
+                  <div class="testimonial__info testimonial-slider__slide swiper-slide">
+                    <p class="testimonial__text testimonial-slider__text">
+                      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                      Velit officia consequat duis enim velit mollit. Exercitation veniam consequat
+                      sunt nostrud amet.
+                    </p>
+                    <p class="testimonial__author testimonial-slider__author">
+                      <span class="testimonial__name">Esther Howard</span><br />CEO of Adebe
+                    </p>
+                  </div>
+                  <div class="testimonial__info testimonial-slider__slide swiper-slide">
+                    <p class="testimonial__text testimonial-slider__text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, veniam
+                      corrupti. Quo ex, distinctio, illo qui voluptas culpa quasi iusto repellat
+                      vero itaque earum quibusdam quae sint assumenda commodi est?
+                    </p>
+                    <p class="testimonial__author testimonial-slider__author">
+                      <span class="testimonial__name">Esther Howard</span><br />CEO of Adebe
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
               </div>
               <ul class="pagination pagination--to-end">
                 <li class="pagination-item">
-                  <button class="pagination-btn">
+                  <button class="pagination-btn btn-prev">
                     <svg class="pagination-icon" width="20" height="20">
                       <use href="./images/symbol-defs.svg#icon-left-arrow"></use>
                     </svg>
                   </button>
                 </li>
                 <li class="pagination-item">
-                  <button class="pagination-btn">
+                  <button class="pagination-btn btn-next">
                     <svg class="pagination-icon" width="20" height="20">
                       <use href="./images/symbol-defs.svg#icon-right-arrow"></use>
                     </svg>
@@ -599,6 +615,7 @@
       </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script type="module" src="./js/script.js"></script>
   </body>
 </html>
