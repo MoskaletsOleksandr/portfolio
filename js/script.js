@@ -1,9 +1,14 @@
 import { mobMenuOpen, menuContainer, mobMenuClose } from './mob-menu.js';
+import { initPortfolioFilter } from './portfolioFilter.js';
 import { handleScroll } from './scroll.js';
 
 window.addEventListener('scroll', handleScroll);
 
-new Swiper('.testimonial-slider', {
+initPortfolioFilter();
+
+const sliderBlock = document.querySelector('.testimonial__wrapper');
+
+const testimonialSlider = new Swiper('.testimonial-slider', {
   navigation: {
     nextEl: '.btn-next',
     prevEl: '.btn-prev',
@@ -32,4 +37,12 @@ new Swiper('.testimonial-slider', {
   //       slidesPerView: 2,
   //     },
   //   }, // працює по принципу mobile-first
+});
+
+sliderBlock.addEventListener('mouseenter', () => {
+  testimonialSlider.autoplay.stop();
+});
+
+sliderBlock.addEventListener('mouseleave', () => {
+  testimonialSlider.autoplay.start();
 });
