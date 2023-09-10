@@ -715,7 +715,72 @@
             <use href="./images/symbol-defs.svg#close-icon"></use>
           </svg>
         </button>
-        <h2>Напиши мені, якщо у тебе залишилися запитання</h2>
+        <b class="modal__title">Напиши мені, якщо у тебе залишилися запитання</b>
+        <form class="modal__form modal-form">
+          <div class="modal-form__field">
+            <label for="name" class="modal-form__contact-label">Ім'я</label>
+            <div class="modal-form__input-wrap">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="modal-form__input modal-form__input--left-padding"
+                placeholder=" "
+                required
+              />
+              <svg class="modal-form__icon" width="18" height="18">
+                <use href="./images/symbol-defs.svg#icon-person-form"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-form__field">
+            <label for="tel" class="modal-form__contact-label">Телефон</label>
+            <div class="modal-form__input-wrap">
+              <input
+                type="tel"
+                name="tel"
+                id="tel"
+                class="modal-form__input modal-form__input--left-padding"
+                placeholder=" "
+                required
+              />
+              <svg class="modal-form__icon" width="18" height="18">
+                <use href="./images/symbol-defs.svg#icon-phone-form"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-form__field">
+            <label for="mail" class="modal-form__contact-label">Пошта</label>
+            <div class="modal-form__input-wrap">
+              <input
+                type="email"
+                name="mail"
+                id="mail"
+                class="modal-form__input modal-form__input--left-padding"
+                placeholder=" "
+              />
+              <svg class="modal-form__icon" width="18" height="18">
+                <use href="./images/symbol-defs.svg#icon-email-form"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-form__field">
+            <label for="comment" class="modal-form__contact-label">Коментар</label>
+            <textarea
+              name="comment"
+              id="comment"
+              class="modal-form__comment modal-form__input"
+              placeholder="Введіть текст"
+            ></textarea>
+          </div>
+          <button type="submit" class="modal-form__btn button">Відправити</button>
+        </form>
+        <button type="button" class="stacks__download-button stacks__download-button--modal">
+          <svg class="stacks__download-icon" width="16" height="16">
+            <use href="./images/symbol-defs.svg#icon-vector-btn"></use>
+          </svg>
+          Download CV
+        </button>
       </div>
     </div>
 
