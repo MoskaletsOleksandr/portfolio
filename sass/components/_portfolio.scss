@@ -58,16 +58,22 @@
 
 .portfolio__list {
     display: flex;
-    // flex-wrap: wrap;
-    // gap: 24px;
+
+    &--portfoio {
+    flex-wrap: wrap;
+    gap: 24px;
+    }
 }
 
 .portfolio__item {
     background-color: var(--portfolio-background-color);
-//     width: 100%;
-//     @include desktop {
-//         flex-basis: calc((100% - 48px) / 3);
-//     }
+
+    &--portfolio {
+        width: 100%;
+        @include desktop {
+            flex-basis: calc((100% - 48px) / 3);
+        }
+    }
 }
 
 .portfolio__item-link {

@@ -729,9 +729,21 @@ body {
 .portfolio__list {
   display: flex;
 }
+.portfolio__list--portfoio {
+  flex-wrap: wrap;
+  gap: 24px;
+}
 
 .portfolio__item {
   background-color: var(--portfolio-background-color);
+}
+.portfolio__item--portfolio {
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  .portfolio__item--portfolio {
+    flex-basis: calc((100% - 48px) / 3);
+  }
 }
 
 .portfolio__item-link {
