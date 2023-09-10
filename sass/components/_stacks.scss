@@ -1,5 +1,44 @@
 .stacks {
     background-image: linear-gradient(to bottom, #F7F7F7 50%, var(--primary-background-color) 50%);
+    position: relative;
+
+        &::before {
+                content: "Fullstack";
+                position: absolute;
+                top: 60%;
+                left: 30%;
+                transform: translate(-50%, -50%) rotate(-30deg);
+                font-size: 60px;
+                font-weight: bold;
+                color: rgba(255, 255, 255, 0.03);
+                text-align: center;
+                text-transform: uppercase;
+                z-index: 1;
+
+                @include desktop {
+                    font-size: 100px;
+                    color: rgba(255, 255, 255, 0.01);
+                }
+            }
+
+            &::after {
+                content: "Developer";
+                position: absolute;
+                top: 60%;
+                left: 73%;
+                transform: translate(-50%, -50%) rotate(-30deg);
+                font-size: 60px;
+                font-weight: bold;
+                color: rgba(255, 255, 255, 0.03);
+                text-align: center;
+                text-transform: uppercase;
+                z-index: 1;
+
+                @include desktop {
+                    font-size: 100px;
+                    color: rgba(255, 255, 255, 0.01);
+                }
+            }
 }
 
 .stacks__list {
@@ -17,27 +56,21 @@
 
 .stacks__item {}
 
-.stacks__link {
-    color: #A7AAB4;
-    
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover {
-        color: #2196f3;
-    }
-        
-    &:focus {
-        color: #2196f3;
-    }
-}
-
 .stacks__icon {
-    fill: currentColor
-}
+    fill: #A7AAB4;
+    
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover {
+            fill: var(--active-link-color);
+        }
+    
+        &:focus {
+            fill: var(--active-link-color);
+        }}
 
 .stacks__actions {
-    background-color: var(--secondary-background-color);
-
+    background: linear-gradient(-30deg, #111214 0%, #111214 15%, #161719 15%, #161719 50%, #1f2022 50%, #1f2022 60%, #1a1b1d 60%, #1a1b1d 90%, #111214 90%, #111214 100%);
     padding: 50px 80px;
 
     display: flex;
