@@ -4,7 +4,9 @@ export function initPortfolioFilter() {
 
   filterButtons.forEach(button => {
     button.addEventListener('click', () => {
-      const category = button.textContent.toLowerCase();
+      filterButtons.forEach(btn => btn.classList.remove('portfolio__filter-button--current'));
+      button.classList.add('portfolio__filter-button--current');
+      const category = button.textContent.toLowerCase().trim();
       console.log(category);
 
       if (category === 'all') {
