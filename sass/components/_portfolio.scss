@@ -1,5 +1,6 @@
 .portfolio {
     background-color: #ECF0F0;
+    position: relative;
 }
 
 .portfolio__content {
@@ -41,6 +42,17 @@
     &:hover,
     &:focus {
         color: var(--active-link-color);
+    }
+}
+
+.portfolio-slider {
+    overflow: hidden;
+
+    & .swiper-pagination-bullet {
+        height: 3px;
+        width: 15px;
+        background-color: var(--btn-color);
+        border-radius: 0%;
     }
 }
 
