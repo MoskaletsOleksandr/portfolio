@@ -138,7 +138,7 @@
             <p class="hero__greatings"><span class="hero__greatings-accent">Hello</span>, I'm</p>
             <h1 class="hero__title">Oleksandr Moskalets</h1>
             <h2 class="hero__description">Fullstack developer</h2>
-            <button class="hero__cta-button button">Get in touch</button>
+            <button class="hero__cta-button button open-modal-button">Get in touch</button>
           </div>
           <div class="hero__social-links">
             <ul class="socials socials--column">
@@ -271,7 +271,7 @@
           </ul>
           <div class="stacks__actions">
             <h3 class="stacks__actions-title">let’s work together on Your Next Project</h3>
-            <button class="stacks__hire-button button">HIRE ME NOW</button>
+            <button class="stacks__hire-button button open-modal-button">HIRE ME NOW</button>
             <button type="button" class="stacks__download-button">
               <svg class="stacks__download-icon" width="16" height="16">
                 <use href="./images/symbol-defs.svg#icon-vector-btn"></use>
@@ -707,6 +707,17 @@
         </div>
       </div>
     </footer>
+
+    <div id="contactModal" class="backdrop is-hidden">
+      <div class="modal">
+        <button id="modal__close-btn" type="button" class="modal__close-btn close-btn">
+          <svg class="close-btn__icon" width="30" height="30">
+            <use href="./images/symbol-defs.svg#close-icon"></use>
+          </svg>
+        </button>
+        <h2>Напиши мені, якщо у тебе залишилися запитання</h2>
+      </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script type="module" src="./js/script.js"></script>
