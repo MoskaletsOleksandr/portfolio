@@ -18,18 +18,8 @@ testimonialSliderBlock.addEventListener('mouseleave', () => {
 
 portfolioSliderBlock.addEventListener('mouseenter', () => {
   portfolioSlider.autoplay.stop();
-  console.log('====================================');
-  console.log('portfolioSliderBlock mouseenter');
-  console.log('====================================');
 });
 
 portfolioSliderBlock.addEventListener('mouseleave', () => {
   portfolioSlider.autoplay.start();
-  console.log('====================================');
-  console.log('portfolioSliderBlock mouseleave');
-  console.log('====================================');
 });
-
-console.log('====================================');
-console.log(portfolioSliderBlock);
-console.log('====================================');
