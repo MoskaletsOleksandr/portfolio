@@ -1156,6 +1156,7 @@ body {
 }
 .close-btn:hover .close-btn__icon {
   fill: var(--active-link-color);
+  cursor: pointer;
 }
 
 .close-btn__icon {

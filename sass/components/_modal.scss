@@ -80,6 +80,7 @@
     top: 8px;
     right: 8px;
 }
+
 .close-btn {
     display: flex;
     align-items: center;
@@ -93,6 +94,7 @@
 
     &:hover .close-btn__icon {
         fill: var(--active-link-color);
+        cursor: pointer;
     }
 }
 
