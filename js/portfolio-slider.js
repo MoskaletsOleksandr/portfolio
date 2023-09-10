@@ -21,7 +21,7 @@ export const portfolioSlider = new Swiper('.portfolio-slider', {
   spaceBetween: 50,
   loop: true,
   autoplay: {
-    delay: 5000,
+    delay: 3000,
   },
   speed: 800,
   breakpoints: {
