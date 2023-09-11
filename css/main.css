@@ -437,8 +437,13 @@ body {
 }
 .hero__title::after {
   content: "|";
-  margin-left: -12px;
+  margin-left: -4px;
   font-weight: 100;
+}
+@media (min-width: 1200px) {
+  .hero__title::after {
+    margin-left: -12px;
+  }
 }
 
 .hero__description {
@@ -542,19 +547,22 @@ body {
 .stacks {
   background-image: linear-gradient(to bottom, #F7F7F7 50%, var(--primary-background-color) 50%);
   position: relative;
+  overflow: hidden;
 }
-.stacks::before {
-  content: "Fullstack";
-  position: absolute;
-  top: 60%;
-  left: 30%;
-  transform: translate(-50%, -50%) rotate(-30deg);
-  font-size: 60px;
-  font-weight: bold;
-  color: rgba(255, 255, 255, 0.03);
-  text-align: center;
-  text-transform: uppercase;
-  z-index: 1;
+@media (min-width: 768px) {
+  .stacks::before {
+    content: "Fullstack";
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    transform: translate(-50%, -50%) rotate(-30deg);
+    font-size: 60px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.03);
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 1;
+  }
 }
 @media (min-width: 1200px) {
   .stacks::before {
@@ -562,18 +570,20 @@ body {
     color: rgba(255, 255, 255, 0.01);
   }
 }
-.stacks::after {
-  content: "Developer";
-  position: absolute;
-  top: 60%;
-  left: 73%;
-  transform: translate(-50%, -50%) rotate(-30deg);
-  font-size: 60px;
-  font-weight: bold;
-  color: rgba(255, 255, 255, 0.03);
-  text-align: center;
-  text-transform: uppercase;
-  z-index: 1;
+@media (min-width: 768px) {
+  .stacks::after {
+    content: "Developer";
+    position: absolute;
+    top: 60%;
+    left: 73%;
+    transform: translate(-50%, -50%) rotate(-30deg);
+    font-size: 60px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.03);
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 1;
+  }
 }
 @media (min-width: 1200px) {
   .stacks::after {

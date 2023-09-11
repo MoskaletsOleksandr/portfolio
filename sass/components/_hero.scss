@@ -52,8 +52,12 @@
 
     &::after{
         content: "|";
-        margin-left: -12px;
+        margin-left: -4px;
         font-weight: 100;
+        
+        @include desktop{
+            margin-left: -12px;
+        }
     }
 }
 
