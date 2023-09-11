@@ -453,6 +453,53 @@ body {
   margin-bottom: 24px;
 }
 
+.portfolio-hero {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(-30deg, #111214 0%, #111214 15%, #161719 15%, #161719 50%, #1f2022 50%, #1f2022 60%, #1a1b1d 60%, #1a1b1d 90%, #111214 90%, #111214 100%);
+}
+
+.portfolio-hero-container {
+  height: 447px;
+  padding-top: 182px;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1200px) {
+  .portfolio-hero-container {
+    height: 547px;
+  }
+}
+.portfolio-hero-container::after {
+  content: "Portfolio";
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 230px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.05);
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.portfolio-hero__title {
+  font-size: 80px;
+  font-weight: regular;
+  color: var(--light-title-color);
+  margin: 0 auto;
+}
+@media (min-width: 1200px) {
+  .portfolio-hero__title {
+    font-size: 130px;
+  }
+}
+
+.portfolio-hero__social-links {
+  margin: auto auto 15px auto;
+}
+
 .socials {
   display: flex;
   gap: 32px;
@@ -592,6 +639,21 @@ body {
   }
 }
 
+.stacks-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stacks-title {
+  margin-bottom: 40px;
+}
+@media (min-width: 1200px) {
+  .stacks-title {
+    margin-bottom: 65px;
+  }
+}
+
 .stacks__list {
   display: flex;
   gap: 27px;
@@ -602,6 +664,7 @@ body {
 @media (min-width: 1200px) {
   .stacks__list {
     margin-bottom: 80px;
+    gap: 90px;
   }
 }
 
@@ -617,6 +680,7 @@ body {
 }
 
 .stacks__actions {
+  width: 100%;
   background: linear-gradient(-30deg, #111214 0%, #111214 15%, #161719 15%, #161719 50%, #1f2022 50%, #1f2022 60%, #1a1b1d 60%, #1a1b1d 90%, #111214 90%, #111214 100%);
   padding: 50px 80px;
   display: flex;
@@ -1311,4 +1375,42 @@ body {
 }
 .modal-form__btn:focus {
   background-color: var(--btn-color-hover);
+}
+
+.questions-container {
+  background-color: #F7F7F7;
+  padding: 64px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1200px) {
+  .questions-container {
+    padding: 80px 193px;
+  }
+}
+
+.questions-title {
+  margin-bottom: 40px;
+}
+@media (min-width: 1200px) {
+  .questions-title {
+    margin-bottom: 65px;
+  }
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.faq-item {
+  border: 1px solid #DFE2E5;
+  padding: 16px;
+}
+@media (min-width: 1200px) {
+  .faq-item {
+    padding: 24px;
+  }
 }/*# sourceMappingURL=main.css.map */

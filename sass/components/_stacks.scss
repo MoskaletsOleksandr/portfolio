@@ -48,6 +48,20 @@
             }
 }
 
+.stacks-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stacks-title {
+    margin-bottom: 40px;
+
+    @include desktop {
+        margin-bottom: 65px;
+    }
+}
+
 .stacks__list {
     display: flex;
     gap: 27px;
@@ -58,6 +72,7 @@
 
     @include desktop {
         margin-bottom: 80px;
+        gap: 90px;
     }
 }
 
@@ -77,6 +92,7 @@
         }}
 
 .stacks__actions {
+    width: 100%;
     background: linear-gradient(-30deg, #111214 0%, #111214 15%, #161719 15%, #161719 50%, #1f2022 50%, #1f2022 60%, #1a1b1d 60%, #1a1b1d 90%, #111214 90%, #111214 100%);
     padding: 50px 80px;
 
