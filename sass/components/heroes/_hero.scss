@@ -77,25 +77,23 @@
 
 ////////////////////////portfolio-page
 
-.portfolio-hero {
+.alternative-hero {
     position: relative;
     overflow: hidden;
     background: linear-gradient(-30deg, #111214 0%, #111214 15%, #161719 15%, #161719 50%, #1f2022 50%, #1f2022 60%, #1a1b1d 60%, #1a1b1d 90%, #111214 90%, #111214 100%);
 }
 
-.portfolio-hero-container {
+.alternative-hero-container {
     height: 447px;
     padding-top: 182px;
     display: flex;
     flex-direction: column;
-    // justify-content: center;
 
     @include desktop {
         height: 547px;
     }
 
         &::after {
-                content: "Portfolio";
                 position: absolute;
                 top: 45%;
                 left: 50%;
@@ -108,9 +106,18 @@
                 text-transform: uppercase;
                 z-index: 1;
         }
+
+        &--portfolio::after{
+            content: "Portfolio";
+        }
+
+        &--about::after{
+            content: "about me";
+            white-space: nowrap;
+        }
 }
 
-.portfolio-hero__title {
+.alternative-hero__title {
     font-size: 80px;
     font-weight: regular;
     color: var(--light-title-color);
@@ -118,13 +125,9 @@
 
     @include desktop {
         font-size: 130px;
-        // margin-bottom: 12px;
     }
 }
 
-.portfolio-hero__cta-button {}
-
-.portfolio-hero__social-links {
+.alternative-hero__social-links {
     margin: auto auto 15px auto;
-
 }

@@ -453,25 +453,24 @@ body {
   margin-bottom: 24px;
 }
 
-.portfolio-hero {
+.alternative-hero {
   position: relative;
   overflow: hidden;
   background: linear-gradient(-30deg, #111214 0%, #111214 15%, #161719 15%, #161719 50%, #1f2022 50%, #1f2022 60%, #1a1b1d 60%, #1a1b1d 90%, #111214 90%, #111214 100%);
 }
 
-.portfolio-hero-container {
+.alternative-hero-container {
   height: 447px;
   padding-top: 182px;
   display: flex;
   flex-direction: column;
 }
 @media (min-width: 1200px) {
-  .portfolio-hero-container {
+  .alternative-hero-container {
     height: 547px;
   }
 }
-.portfolio-hero-container::after {
-  content: "Portfolio";
+.alternative-hero-container::after {
   position: absolute;
   top: 45%;
   left: 50%;
@@ -484,20 +483,27 @@ body {
   text-transform: uppercase;
   z-index: 1;
 }
+.alternative-hero-container--portfolio::after {
+  content: "Portfolio";
+}
+.alternative-hero-container--about::after {
+  content: "about me";
+  white-space: nowrap;
+}
 
-.portfolio-hero__title {
+.alternative-hero__title {
   font-size: 80px;
   font-weight: regular;
   color: var(--light-title-color);
   margin: 0 auto;
 }
 @media (min-width: 1200px) {
-  .portfolio-hero__title {
+  .alternative-hero__title {
     font-size: 130px;
   }
 }
 
-.portfolio-hero__social-links {
+.alternative-hero__social-links {
   margin: auto auto 15px auto;
 }
 
