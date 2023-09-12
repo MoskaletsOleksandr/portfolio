@@ -1034,6 +1034,10 @@ body {
   justify-content: space-between;
 }
 
+.footer__address {
+  font-style: normal;
+}
+
 .footer__contact-list {
   display: flex;
   flex-direction: column;

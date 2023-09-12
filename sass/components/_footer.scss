@@ -17,13 +17,15 @@
 }
 
 .footer__content {
-        display: flex;
-        gap: 65px;
-        flex-direction: column;
-        justify-content: space-between;
+    display: flex;
+    gap: 65px;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.footer__address {}
+.footer__address {
+    font-style: normal;
+}
 
 .footer__contact-list {
     display: flex;

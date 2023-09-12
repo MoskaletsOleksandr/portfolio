@@ -8,21 +8,25 @@ window.addEventListener('scroll', handleScroll);
 
 initPortfolioFilter();
 
-testimonialSliderBlock.addEventListener('mouseenter', () => {
-  testimonialSlider.autoplay.stop();
-});
+if (testimonialSliderBlock) {
+  testimonialSliderBlock.addEventListener('mouseenter', () => {
+    testimonialSlider.autoplay.stop();
+  });
 
-testimonialSliderBlock.addEventListener('mouseleave', () => {
-  testimonialSlider.autoplay.start();
-});
+  testimonialSliderBlock.addEventListener('mouseleave', () => {
+    testimonialSlider.autoplay.start();
+  });
+}
 
-portfolioSliderBlock.addEventListener('mouseenter', () => {
-  portfolioSlider.autoplay.stop();
-});
+if (portfolioSliderBlock) {
+  portfolioSliderBlock.addEventListener('mouseenter', () => {
+    portfolioSlider.autoplay.stop();
+  });
 
-portfolioSliderBlock.addEventListener('mouseleave', () => {
-  portfolioSlider.autoplay.start();
-});
+  portfolioSliderBlock.addEventListener('mouseleave', () => {
+    portfolioSlider.autoplay.start();
+  });
+}
 
 const openModalButtons = document.querySelectorAll('.open-modal-button');
 const closeModalButton = document.querySelector('#modal__close-btn');
