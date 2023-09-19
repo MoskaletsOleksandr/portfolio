@@ -199,7 +199,7 @@
               />
             </div>
             <div class="about__info">
-              <h2 class="title"><span class="title-accent">01</span>about me</h2>
+              <h2 class="title about__title"><span class="title-accent">01</span>about me</h2>
               <p class="about__subtitle">
                 I'm Professional Designer and Front-End Web Developer That Solve Your Problems
               </p>
@@ -241,7 +241,25 @@
             </p>
             <button class="button open-modal-button">Download CV</button>
           </div>
-          <div class="skills_stats"></div>
+          <div class="skills__stats">
+            <div class="skills__skill animated">
+              <div class="skill__outer">
+                <div class="skill__inner">
+                  <p class="skill__number"></p>
+                </div>
+              </div>
+              <svg class="skill__circle" width="160" height="160">
+                <defs>
+                  <linearGradient id="GradientColor">
+                    <stop offset="0%" stop-color="#e91e63" />
+                    <stop offset="100%" stop-color="#673ab7" />
+                  </linearGradient>
+                </defs>
+                <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                <!-- <use xlink:href="./images/symbol-defs.svg#icon-circle"></use> -->
+              </svg>
+            </div>
+          </div>
         </div>
       </section>
       <section class="stacks section">

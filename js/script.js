@@ -32,29 +32,60 @@ const openModalButtons = document.querySelectorAll('.open-modal-button');
 const closeModalButton = document.querySelector('#modal__close-btn');
 const contactModal = document.querySelector('#contactModal');
 
-// Відкриття модального вікна
 function openModal() {
   contactModal.classList.remove('is-hidden');
 }
 
-// Закриття модального вікна
 function closeModal() {
   contactModal.classList.add('is-hidden');
 }
 
-// Обробник кліку на кнопках відкриття модального вікна
 openModalButtons.forEach(button => {
   button.addEventListener('click', () => {
     openModal();
   });
 });
 
-// Обробник кліку на кнопці закриття
 closeModalButton.addEventListener('click', closeModal);
 
-// Обробник кліку поза модальним вікном (якщо потрібно)
 window.addEventListener('click', e => {
   if (e.target === contactModal) {
     closeModal();
   }
 });
+
+function isElementInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+const skillNumber = document.querySelector('.skill__number');
+let counter = 0;
+
+function animateNumber() {
+  if (counter < 65) {
+    counter += 0.6;
+    skillNumber.innerHTML = Math.floor(counter) + '%';
+    requestAnimationFrame(animateNumber);
+  }
+}
+
+const animatedElements = document.querySelectorAll('.animated');
+
+function checkElementsVisibility() {
+  animatedElements.forEach(element => {
+    if (isElementInViewport(element)) {
+      animateNumber();
+      // element.classList.add('animate'); // Додайте клас анімації, наприклад, 'animate'
+    }
+  });
+}
+
+// Викликайте функцію при завантаженні сторінки та при прокрутці
+window.addEventListener('load', checkElementsVisibility);
+window.addEventListener('scroll', checkElementsVisibility);
