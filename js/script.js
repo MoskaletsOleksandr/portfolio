@@ -54,38 +54,61 @@ window.addEventListener('click', e => {
   }
 });
 
-function isElementInViewport(element) {
-  const rect = element.getBoundingClientRect();
-  return (
-    rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-  );
-}
+// const skillNumber = document.querySelector('.skill__number');
+// let counter = 0;
+
+// function animateNumber() {
+//   if (counter < 65) {
+//     counter += 0.05;
+//     skillNumber.innerHTML = Math.floor(counter) + '%';
+//     requestAnimationFrame(animateNumber);
+//   }
+// }
+
+// const stacksSection = document.querySelector('.stacks');
+// const circle = document.getElementById('circle');
+
+// window.addEventListener('scroll', () => {
+//   const sectionPos = stacksSection.getBoundingClientRect().top;
+//   const screenPos = window.innerHeight;
+
+//   if (sectionPos < screenPos) {
+//     animateNumber();
+//     circle.classList.add('animate');
+//   }
+// });
 
 const skillNumber = document.querySelector('.skill__number');
-let counter = 0;
+let start = null;
+const endValue = 65;
+const duration = 2000; // 2 секунди
 
-function animateNumber() {
-  if (counter < 65) {
-    counter += 0.6;
-    skillNumber.innerHTML = Math.floor(counter) + '%';
+function animateNumber(timestamp) {
+  if (!start) start = timestamp;
+
+  const progress = timestamp - start;
+  const percentage = Math.min(progress / duration, 1);
+  const currentValue = Math.floor(percentage * endValue);
+
+  skillNumber.innerHTML = currentValue + '%';
+
+  if (percentage < 1) {
     requestAnimationFrame(animateNumber);
   }
 }
 
-const animatedElements = document.querySelectorAll('.animated');
+const stacksSection = document.querySelector('.stacks');
+const circle = document.getElementById('circle');
 
-function checkElementsVisibility() {
-  animatedElements.forEach(element => {
-    if (isElementInViewport(element)) {
-      animateNumber();
-      // element.classList.add('animate'); // Додайте клас анімації, наприклад, 'animate'
-    }
-  });
-}
+window.addEventListener('scroll', () => {
+  const sectionPos = stacksSection.getBoundingClientRect().top;
+  const screenPos = window.innerHeight;
 
-// Викликайте функцію при завантаженні сторінки та при прокрутці
-window.addEventListener('load', checkElementsVisibility);
-window.addEventListener('scroll', checkElementsVisibility);
+  if (sectionPos < screenPos) {
+    requestAnimationFrame(animateNumber);
+    circle.classList.add('animate');
+  } else {
+    start = null;
+    circle.classList.remove('animate');
+  }
+});

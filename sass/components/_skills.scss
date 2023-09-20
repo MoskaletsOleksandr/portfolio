@@ -33,12 +33,15 @@
     color: #555;
 }
 
- circle {
+ #circle {
     fill: none;
     stroke: url(#GradientColor);
     stroke-width: 20px;
     stroke-dasharray: 472;
     stroke-dashoffset: 472;
+}
+
+.animate {
     animation: anim 2s linear forwards;
 }
 
@@ -53,14 +56,3 @@
         stroke-dashoffset: 165;
     }
 }
-// .animated {
-//     opacity: 0;
-//     transform: translateY(20px);
-//     /* Наприклад, зсув вниз на 20px */
-//     transition: opacity 0.5s, transform 0.5s;
-// }
-
-// .animate {
-//     opacity: 1;
-//     transform: translateY(0);
-// }

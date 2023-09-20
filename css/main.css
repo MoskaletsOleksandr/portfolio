@@ -1584,12 +1584,15 @@ body {
   color: #555;
 }
 
-circle {
+#circle {
   fill: none;
   stroke: url(#GradientColor);
   stroke-width: 20px;
   stroke-dasharray: 472;
   stroke-dashoffset: 472;
+}
+
+.animate {
   -webkit-animation: anim 2s linear forwards;
           animation: anim 2s linear forwards;
 }
