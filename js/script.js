@@ -54,51 +54,31 @@ window.addEventListener('click', e => {
   }
 });
 
-// const skillNumber = document.querySelector('.skill__number');
-// let counter = 0;
+const skillNumbers = document.querySelectorAll('.skill__number');
+const endValues = [85, 65, 75];
 
-// function animateNumber() {
-//   if (counter < 65) {
-//     counter += 0.05;
-//     skillNumber.innerHTML = Math.floor(counter) + '%';
-//     requestAnimationFrame(animateNumber);
-//   }
-// }
+skillNumbers.forEach((skillNumber, index) => {
+  let start = null;
+  const endValue = endValues[index];
+  const duration = 2000;
 
-// const stacksSection = document.querySelector('.stacks');
-// const circle = document.getElementById('circle');
+  function animateNumber(timestamp) {
+    if (!start) start = timestamp;
 
-// window.addEventListener('scroll', () => {
-//   const sectionPos = stacksSection.getBoundingClientRect().top;
-//   const screenPos = window.innerHeight;
+    const progress = timestamp - start;
+    const percentage = Math.min(progress / duration, 1);
+    const currentValue = Math.floor(percentage * endValue);
 
-//   if (sectionPos < screenPos) {
-//     animateNumber();
-//     circle.classList.add('animate');
-//   }
-// });
+    skillNumber.innerHTML = currentValue + '%';
 
-const skillNumber = document.querySelector('.skill__number');
-let start = null;
-const endValue = 65;
-const duration = 2000; // 2 секунди
-
-function animateNumber(timestamp) {
-  if (!start) start = timestamp;
-
-  const progress = timestamp - start;
-  const percentage = Math.min(progress / duration, 1);
-  const currentValue = Math.floor(percentage * endValue);
-
-  skillNumber.innerHTML = currentValue + '%';
-
-  if (percentage < 1) {
-    requestAnimationFrame(animateNumber);
+    if (percentage < 1) {
+      requestAnimationFrame(animateNumber);
+    }
   }
-}
+});
 
 const stacksSection = document.querySelector('.stacks');
-const circle = document.getElementById('circle');
+const circles = document.querySelectorAll('.circle');
 
 window.addEventListener('scroll', () => {
   const sectionPos = stacksSection.getBoundingClientRect().top;
@@ -106,9 +86,13 @@ window.addEventListener('scroll', () => {
 
   if (sectionPos < screenPos) {
     requestAnimationFrame(animateNumber);
-    circle.classList.add('animate');
+    circles.forEach(circle => {
+      circle.classList.add('animate');
+    });
   } else {
     start = null;
-    circle.classList.remove('animate');
+    circles.forEach(circle => {
+      circle.classList.remove('animate');
+    });
   }
 });
