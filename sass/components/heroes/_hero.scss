@@ -111,6 +111,10 @@
             content: "Portfolio";
         }
 
+        &--contact::after{
+            content: "Contact";
+        }
+
         &--about::after{
             content: "about me";
             white-space: nowrap;

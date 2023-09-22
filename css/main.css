@@ -486,6 +486,9 @@ body {
 .alternative-hero-container--portfolio::after {
   content: "Portfolio";
 }
+.alternative-hero-container--contact::after {
+  content: "Contact";
+}
 .alternative-hero-container--about::after {
   content: "about me";
   white-space: nowrap;
@@ -1613,4 +1616,12 @@ body {
   100% {
     stroke-dashoffset: 165;
   }
+}
+.contact__columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact__column {
+  flex-basis: 40%;
 }/*# sourceMappingURL=main.css.map */
