@@ -1,8 +1,66 @@
+.contact {
+    padding-top: 90px;
+    padding-bottom: 10px;
+}
+
 .contact__columns {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 40px;
+
+    @include desktop {            
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+}
+
+.contact-title {
+    margin-bottom: 40px;
 }
 
 .contact__column {
-    flex-basis: 40%;
+    flex-basis: 45%;
+}
+
+.contact {}
+
+.contact__list {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+}
+
+.contact__item {}
+
+.contact__link {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.contact__icon {}
+
+.contact__info {}
+
+.contact__type {
+    margin-bottom: 9px;
+    
+    font-size: 16px;
+    color: var(--dark-text-color);
+}
+
+.contact__detail {
+    color: var(--primary-text-color);
+}
+
+.contact__map {
+    & iframe {
+        border: 0;
+        width: 100%;
+        height: 285px;
+
+        @include desktop {                
+            height: 100%;
+        }
+    }
 }
