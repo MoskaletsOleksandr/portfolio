@@ -1611,13 +1611,13 @@ body {
 
 @-webkit-keyframes anim {
   100% {
-    stroke-dashoffset: 165;
+    stroke-dashoffset: calc(472px - var(--data-number) * 4.72px);
   }
 }
 
 @keyframes anim {
   100% {
-    stroke-dashoffset: 165;
+    stroke-dashoffset: calc(472px - var(--data-number) * 4.72px);
   }
 }
 .contact {

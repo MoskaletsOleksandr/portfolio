@@ -51,8 +51,9 @@
     left: 0;
 }
 
-@keyframes anim{
-    100%{
-        stroke-dashoffset: 165;
+@keyframes anim {
+    100% {
+        // stroke-dashoffset: calc(472 - (var(--data-number) * 4.72));
+        stroke-dashoffset: calc(472px - (var(--data-number) * 4.72px));
     }
 }
