@@ -1,8 +1,6 @@
-export const mobMenuOpen = document.querySelector('.js-menu-open');
-
-export const menuContainer = document.querySelector('.js-menu-container');
-
-export const mobMenuClose = document.querySelector('.js-menu-close');
+const mobMenuOpen = document.querySelector('.js-menu-open');
+const menuContainer = document.querySelector('.js-menu-container');
+const mobMenuClose = document.querySelector('.js-menu-close');
 
 mobMenuOpen.addEventListener('click', () => {
   menuContainer.classList.add('is-open');
