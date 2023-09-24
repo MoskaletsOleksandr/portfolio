@@ -1519,14 +1519,14 @@ body {
 }
 
 .questions-container {
-  padding: 64px 16px;
+  padding: 10px 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 @media (min-width: 1200px) {
   .questions-container {
-    padding: 80px 193px;
+    padding: 20px 193px;
   }
 }
 
