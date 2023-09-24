@@ -6,7 +6,7 @@
     gap: 45px;
     flex-direction: column;
     
-    @include desktop {
+    @include tablet {
         flex-direction: row;
         justify-content: space-between;
     }
@@ -33,17 +33,11 @@
     gap: 42px;
 }
 
-.footer__contact-item {}
-
-.footer__contact-info {}
-
 .footer__contact-link {
     display: flex;
     align-items: center;
     gap: 16px;
 }
-
-.footer__contact-icon {}
 
 .footer__contact-type {
     margin-bottom: 9px;

@@ -35,7 +35,7 @@ body {
     padding-right: 16px;
 
     @include mobile {
-        width: 480px;
+        width: 375px;
     }
 
     @include tablet {

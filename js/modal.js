@@ -3,15 +3,12 @@ const closeModalButton = document.querySelector('#modal__close-btn');
 const contactModal = document.querySelector('#contactModal');
 
 const outsideClickHandler = e => {
-  console.log('click', e.target);
   if (e.target === contactModal) {
-    console.log('click', e.target);
     closeModal();
   }
 };
 
 const escapeKeyHandler = e => {
-  console.log(e.key);
   if (e.key === 'Escape') {
     closeModal();
   }
@@ -19,12 +16,14 @@ const escapeKeyHandler = e => {
 
 const openModal = () => {
   contactModal.classList.remove('is-hidden');
+  document.body.classList.add('modal-open');
   document.addEventListener('click', outsideClickHandler);
   document.addEventListener('keydown', escapeKeyHandler);
 };
 
 const closeModal = () => {
   contactModal.classList.add('is-hidden');
+  document.body.classList.remove('modal-open');
   document.removeEventListener('click', outsideClickHandler);
   document.removeEventListener('keydown', escapeKeyHandler);
 };

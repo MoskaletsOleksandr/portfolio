@@ -1,6 +1,10 @@
 .contact {
     padding-top: 90px;
     padding-bottom: 10px;
+
+    @include tablet {
+        padding-bottom: 50px;
+    }
 }
 
 .contact__columns {
@@ -8,7 +12,7 @@
     flex-direction: column;
     gap: 40px;
 
-    @include desktop {            
+    @include tablet {            
         flex-direction: row-reverse;
         justify-content: space-between;
     }
@@ -22,25 +26,17 @@
     flex-basis: 45%;
 }
 
-.contact {}
-
 .contact__list {
     display: flex;
     flex-direction: column;
     gap: 42px;
 }
 
-.contact__item {}
-
 .contact__link {
     display: flex;
     align-items: center;
     gap: 16px;
 }
-
-.contact__icon {}
-
-.contact__info {}
 
 .contact__type {
     margin-bottom: 9px;
@@ -59,7 +55,7 @@
         width: 100%;
         height: 285px;
 
-        @include desktop {                
+        @include tablet {                
             height: 100%;
         }
     }

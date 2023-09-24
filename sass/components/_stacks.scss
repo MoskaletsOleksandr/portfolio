@@ -72,13 +72,15 @@
 
     margin-bottom: 48px;
 
+    @include tablet {
+        gap: 50px;
+    }
+
     @include desktop {
         margin-bottom: 80px;
         gap: 90px;
     }
 }
-
-.stacks__item {}
 
 .stacks__icon {
     fill: #A7AAB4;
@@ -127,29 +129,3 @@
     margin: 0 auto 20px auto;
 }
 
-.stacks__download-button {
-    background-color: transparent;
-    color: var(--btn-text);
-    border: none;
-    cursor: pointer;
-
-    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    
-    &:hover {
-        transform: scale(1.1);
-    }
-
-    &--modal {
-        margin-top: 15px;
-        color: var(--dark-text-color);
-        font-weight: 500;
-    }
-}
-
-.stacks__download-icon {
-    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-
-    .stacks__download-button:hover & {
-        transform: scale(1.2);
-    }
-}

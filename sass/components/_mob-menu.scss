@@ -30,7 +30,7 @@
 .mob-menu__btn--open {
     position: absolute;
     top: 0px;
-    right: 16px;
+    right: 0px;
 
     display: flex;
     justify-content: center;
@@ -79,16 +79,12 @@
         overflow: auto;
 }
 
-.mob-nav {}
-
 .mob-nav__list {
     display: flex;
     flex-direction: column;
     gap: 32px;
     align-items: center;
 }
-
-.mob-nav__item {}
 
 .mob-nav__link {
     font-size: 30px;
@@ -127,8 +123,4 @@
     flex-direction: column;
     gap: 20px;
     align-items: center;
-
-    // margin-top: auto;
 }
-
-.mob-socials {}
