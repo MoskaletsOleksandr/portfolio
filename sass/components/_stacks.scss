@@ -3,51 +3,51 @@
     position: relative;
     overflow: hidden;
 
-        &::before {
-                @include tablet { 
-                content: "Fullstack";
-                position: absolute;
-                top: 60%;
-                left: 30%;
-                transform: translate(-50%, -50%) rotate(-30deg);
-                font-family: var(--heading-font);
-                font-size: 60px;
-                font-weight: medium;
-                color: rgba(255, 255, 255, 0.03);
-                text-align: center;
-                text-transform: uppercase;
-                z-index: 1;
-            }
+    &::before {
+        @include tablet { 
+            content: "Fullstack";
+            position: absolute;
+            top: 60%;
+            left: 30%;
+            transform: translate(-50%, -50%) rotate(-30deg);
+            font-family: var(--heading-font);
+            font-size: 60px;
+            font-weight: medium;
+            color: rgba(255, 255, 255, 0.03);
+            text-align: center;
+            text-transform: uppercase;
+            z-index: 1;
+        }
 
-                @include desktop {
-                    font-size: 100px;
-                    color: rgba(255, 255, 255, 0.01);
-                }
+        @include desktop {
+            font-size: 100px;
+            color: rgba(255, 255, 255, 0.01);
+        }
             
-            }
+    }
 
-            &::after {
-                @include tablet {
-                content: "Developer";
-                position: absolute;
-                top: 60%;
-                left: 73%;
-                transform: translate(-50%, -50%) rotate(-30deg);
-                font-family: var(--heading-font);
-                font-size: 60px;
-                font-weight: medium;
-                color: rgba(255, 255, 255, 0.03);
-                text-align: center;
-                text-transform: uppercase;
-                z-index: 1;
-            }
+    &::after {
+        @include tablet {
+            content: "Developer";
+            position: absolute;
+            top: 60%;
+            left: 73%;
+            transform: translate(-50%, -50%) rotate(-30deg);
+            font-family: var(--heading-font);
+            font-size: 60px;
+            font-weight: medium;
+            color: rgba(255, 255, 255, 0.03);
+            text-align: center;
+            text-transform: uppercase;
+            z-index: 1;
+        }
 
-            @include desktop {
-                    font-size: 100px;
-                    color: rgba(255, 255, 255, 0.01);
-                }
+        @include desktop {
+            font-size: 100px;
+            color: rgba(255, 255, 255, 0.01);
+        }
            
-            }
+    }
 }
 
 .stacks-container {
@@ -85,15 +85,16 @@
 .stacks__icon {
     fill: #A7AAB4;
     
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
-        &:hover {
-            fill: var(--active-link-color);
-        }
+    &:hover {
+        fill: var(--active-link-color);
+    }
     
-        &:focus {
-            fill: var(--active-link-color);
-        }}
+    &:focus {
+        fill: var(--active-link-color);
+    }
+}
 
 .stacks__actions {
     width: 100%;

@@ -613,7 +613,7 @@ body {
   }
 }
 
-.abut__stat-text {
+.about__stat-text {
   color: var(--dark-text-color);
   font-family: var(--text-font);
   font-size: 14px;

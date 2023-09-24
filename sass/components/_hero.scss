@@ -89,32 +89,32 @@
         height: 547px;
     }
 
-        &::after {
-                position: absolute;
-                top: 45%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                font-family: var(--heading-font);
-                font-size: 330px;
-                font-weight: medium;
-                color: rgba(255, 255, 255, 0.05);
-                text-align: center;
-                text-transform: uppercase;
-                z-index: 1;
-        }
+    &::after {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: var(--heading-font);
+        font-size: 330px;
+        font-weight: medium;
+        color: rgba(255, 255, 255, 0.05);
+        text-align: center;
+        text-transform: uppercase;
+        z-index: 1;
+    }
 
-        &--portfolio::after{
-            content: "Portfolio";
-        }
+    &--portfolio::after{
+         content: "Portfolio";
+    }
 
-        &--contact::after{
-            content: "Contact";
-        }
+    &--contact::after{
+        content: "Contact";
+    }
 
-        &--about::after{
-            content: "about me";
-            white-space: nowrap;
-        }
+    &--about::after{
+        content: "about me";
+        white-space: nowrap;
+    }
 }
 
 .alternative-hero__title {

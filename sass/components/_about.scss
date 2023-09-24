@@ -57,7 +57,7 @@
     }
 }
 
-.abut__stat-text{
+.about__stat-text{
     color: var(--dark-text-color);
     font-family: var(--text-font);
     font-size: 14px;    
@@ -74,8 +74,8 @@
     line-height: var(--primary-text-line-height);
 
     &:not(:last-child) {
-            margin-bottom: 16px;
-        }
+        margin-bottom: 16px;
+    }
 }
 
 .about__title {
@@ -142,9 +142,9 @@
 }
 
 .about-page__stat-info {
-display: flex;
-align-items: center;
-gap: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .abut-page__stat-text {
