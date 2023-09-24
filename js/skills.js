@@ -25,11 +25,6 @@ const countTo = skillNumber => {
   }, interval);
 };
 
-// circles.forEach(circle => {
-//   const dataNumber = circle.getAttribute('data-number');
-//   circle.style.setProperty('--data-number', dataNumber);
-// });
-
 const handleScroll = () => {
   const sectionPos = stacksSection.getBoundingClientRect().top;
   const screenPos = window.innerHeight;
