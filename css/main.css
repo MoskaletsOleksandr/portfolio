@@ -599,6 +599,11 @@ body {
   }
 }
 
+.about__stat-image {
+  width: 230px;
+  height: 250px;
+}
+
 .about__stat-info {
   display: flex;
   gap: 12px;
@@ -1993,4 +1998,16 @@ body {
   .modal__title {
     line-height: 1.15;
   }
+}
+
+.development-modal__content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.development-modal__title {
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

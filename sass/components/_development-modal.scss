@@ -124,3 +124,16 @@
         line-height: calc(23 / 20);
     }
 }
+
+.development-modal__content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.development-modal__title {
+    text-align: center;
+}
+
