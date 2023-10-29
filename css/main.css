@@ -667,14 +667,9 @@ body {
 }
 
 .about__text {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
   margin-top: 15px;
-}
-@media (min-width: 1200px) {
-  .about__text {
-    font-size: 14px;
-  }
 }
 
 .about-page__stats {
@@ -933,11 +928,16 @@ body {
 
 .portfolio__filter-button {
   border: none;
-  padding: 12px 16px;
+  padding: 10px 12px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--primary-text-color);
   text-transform: uppercase;
   cursor: pointer;
+}
+@media (min-width: 1200px) {
+  .portfolio__filter-button {
+    padding: 12px 16px;
+  }
 }
 .portfolio__filter-button--current {
   border: 1px solid var(--active-link-color);
@@ -962,6 +962,7 @@ body {
   display: flex;
 }
 .portfolio__list--portfoio {
+  justify-content: center;
   flex-wrap: wrap;
   gap: 24px;
 }
@@ -1602,7 +1603,9 @@ body {
   }
 }
 .faq-input:checked ~ .faq-text {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 @media (min-width: 1200px) {
@@ -1821,6 +1824,7 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: 0;
+  flex: 1;
 }
 @media (min-width: 1200px) {
   .experiences__item:nth-child(2) {

@@ -115,13 +115,9 @@
 }
 
 .about__text{
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 500;
     margin-top: 15px;
-
-    @include desktop{
-        font-size: 14px;
-    }
 }
 
 .about-page__stats {

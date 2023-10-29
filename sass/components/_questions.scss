@@ -90,6 +90,8 @@
     }
 
     .faq-input:checked ~&{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;    
     }
 }
