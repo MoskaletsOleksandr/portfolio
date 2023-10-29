@@ -49,6 +49,7 @@
 
 .portfolio-slider {
     overflow: hidden;
+    z-index: 1;
 
     & .swiper-pagination-bullet {
         height: 5px;
@@ -56,6 +57,10 @@
         background-color: var(--btn-color);
         border-radius: 0%;
     }
+}
+
+.swiper-pagination {
+    z-index: 1;
 }
 
 .portfolio__list {

@@ -968,12 +968,17 @@ body {
 
 .portfolio-slider {
   overflow: hidden;
+  z-index: 1;
 }
 .portfolio-slider .swiper-pagination-bullet {
   height: 5px;
   width: 15px;
   background-color: var(--btn-color);
   border-radius: 0%;
+}
+
+.swiper-pagination {
+  z-index: 1;
 }
 
 .portfolio__list {
@@ -1105,6 +1110,7 @@ body {
 
 .testimonial-slider {
   overflow: hidden;
+  z-index: 1;
 }
 .testimonial-slider .swiper-pagination-bullet {
   background-color: var(--btn-color);
