@@ -61,8 +61,9 @@
     color: var(--dark-text-color);
     font-family: var(--text-font);
     font-size: 16px;    
-    font-weight: 700;
-    line-height: var(--secondary-text-line-height);
+    font-weight: 600;
+    line-height: 1.43;
+    letter-spacing: -0.04em;
 }
 
 .about__description {
@@ -70,8 +71,9 @@
 
     font-family: var(--text-font);
     font-size: 14px;
-    font-weight: var(--text-font-weight);
-    line-height: var(--primary-text-line-height);
+    font-weight: 500;
+    line-height: 2.3;
+    letter-spacing: -0.02em;
 
     &:not(:last-child) {
         margin-bottom: 16px;
@@ -107,11 +109,16 @@
 }
 
 .about__subtitle{
-    font-size: 32px;
-    font-weight: 600;
+    font-family: var(--heading-font);
+    font-size: 24px;
+    font-weight: 400;
     color: var(--dark-title-color);
 
     margin-top: 75px;
+
+    @include desktop {
+        font-size: 32px;
+    }
 }
 
 .about__text{
@@ -143,11 +150,13 @@
     gap: 12px;
 }
 
-.abut-page__stat-text {
+.about-page__stat-text {
     color: var(--dark-text-color);
     font-family: var(--text-font);
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 600;
+    line-height: 1.43;
+    letter-spacing: -0.04em;
     line-height: var(--secondary-text-line-height);
 }
 

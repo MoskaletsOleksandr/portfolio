@@ -1,21 +1,9 @@
 .logo {
     display: block;
-    font-family: var(--heading-font);
-    font-weight: 700;
-    font-size: 35px;
-    line-height: var(--heading-font-height);
-
-    @include desktop {
-        font-size: 40px;
-    }
+    width: 80px;
+    height: 44px;
 }
 
-.logo-letter {    
-    &:nth-child(1) {
-        color: #ffffff;
-    }
-
-    &:nth-child(2) {
-        color: #FE390C;
-    }
+.logo__icon {
+    fill: var(--accent-title-color);  
 }

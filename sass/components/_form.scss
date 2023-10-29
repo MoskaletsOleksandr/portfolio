@@ -6,9 +6,13 @@
 
 .form-info {
     font-family: var(--heading-font);
-    font-weight: var(--heading-font-weight);
+    font-weight: 400;
     font-size: 20px;
     color: var(--light-text-color);
+
+    @include desktop {
+        font-size: 26px;
+    }
 
     &--accent {
         color: var(--accent-text-color);
@@ -50,6 +54,9 @@
 
 .form-label {
     margin-bottom: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
 
     color: var(--light-text-color);
 }
@@ -70,8 +77,14 @@
     line-height: var(--secondary-text-line-height);
 
     &::placeholder {
-        font-weight: 400;
+        font-weight: 500;
         font-size: 12px;
+        letter-spacing: -0.02em;
+    }
+
+    &:-webkit-autofill {
+        -webkit-box-shadow: var(--form-input-box-shadow);
+        -webkit-text-fill-color: var(--light-text-color);
     }
 }
 

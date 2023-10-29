@@ -24,9 +24,10 @@
     <header class="header header-js">
       <div class="header-container">
         <a href="./index.html" lang="en" class="logo header__logo">
-          <span class="logo-letter">M</span>
-          <span class="logo-letter">O</span></a
-        >
+          <svg class="logo__icon" width="80" height="44">
+            <use href="./images/symbol-defs.svg#icon-logo"></use>
+          </svg>
+        </a>
         <nav class="nav header__nav">
           <ul class="nav__list">
             <li class="nav__item">
@@ -48,9 +49,10 @@
 
         <div class="mob-menu-container js-menu-container">
           <a href="./index.html" lang="en" class="logo header__logo">
-            <span class="logo-letter">M</span>
-            <span class="logo-letter">O</span></a
-          >
+            <svg class="logo__icon" width="80" height="44">
+              <use href="./images/symbol-defs.svg#icon-logo"></use>
+            </svg>
+          </a>
           <button class="mob-menu__btn--close js-menu-close">
             <svg class="mob-menu__icon--close" width="32px" height="32px">
               <use href="./images/symbol-defs.svg#icon-close"></use>
@@ -411,7 +413,7 @@
                         Trello2.0 Backend - the engine that powers the seamless functionality of
                         task management. Our backend, hosted on a free Render.com server, is
                         responsible for processing requests, managing data, and ensuring the smooth
-                        operation of the Trello2.0 app. It works with the frontend to deliver a task
+                        operation of the app. It works with the frontend to deliver a task
                         management experience.
                       </p>
                     </div>
@@ -752,7 +754,7 @@
           <b class="form-info"
             >Send me <span class="form-info--accent">an email</span> with your proposals</b
           >
-          <form class="form">
+          <form class="form" action="https://formspree.io/f/xwkdyjnn" method="POST">
             <div class="form-fields">
               <div class="form-field">
                 <label for="name" class="form-label">Your name*</label>
@@ -784,7 +786,6 @@
                 id="message"
                 class="form-textarea form-input"
                 placeholder="Write your message here"
-                required
               ></textarea>
             </div>
             <button type="submit" class="form-button button">send message</button>
@@ -801,7 +802,7 @@
           </svg>
         </button>
         <b class="modal__title">Email me if you have any questions</b>
-        <form class="modal__form modal-form">
+        <form class="modal__form modal-form" action="https://formspree.io/f/xwkdyjnn" method="POST">
           <div class="modal-form__field">
             <label for="name" class="modal-form__contact-label">Name</label>
             <div class="modal-form__input-wrap">

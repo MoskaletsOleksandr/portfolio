@@ -23,9 +23,10 @@
     <header class="header header-js">
       <div class="header-container">
         <a href="./index.html" lang="en" class="logo header__logo">
-          <span class="logo-letter">M</span>
-          <span class="logo-letter">O</span></a
-        >
+          <svg class="logo__icon" width="80" height="44">
+            <use href="./images/symbol-defs.svg#icon-logo"></use>
+          </svg>
+        </a>
         <nav class="nav header__nav">
           <ul class="nav__list">
             <li class="nav__item"><a href="./index.html" class="nav__link">home</a></li>
@@ -45,9 +46,10 @@
 
         <div class="mob-menu-container js-menu-container">
           <a href="./index.html" lang="en" class="logo header__logo">
-            <span class="logo-letter">M</span>
-            <span class="logo-letter">O</span></a
-          >
+            <svg class="logo__icon" width="80" height="44">
+              <use href="./images/symbol-defs.svg#icon-logo"></use>
+            </svg>
+          </a>
           <button class="mob-menu__btn--close js-menu-close">
             <svg class="mob-menu__icon--close" width="32px" height="32px">
               <use href="./images/symbol-defs.svg#icon-close"></use>
@@ -218,13 +220,13 @@
                 <li class="about-page__stat">
                   <div class="about-page__stat-info">
                     <span class="title-accent">13</span>
-                    <p class="abut-page__stat-text">Months<br />of training</p>
+                    <p class="about-page__stat-text">Months<br />of training</p>
                   </div>
                 </li>
                 <li class="about-page__stat">
                   <div class="about-page__stat-info">
                     <span class="title-accent">8</span>
-                    <p class="abut-page__stat-text">Training <br />projects completed</p>
+                    <p class="about-page__stat-text">Training <br />projects completed</p>
                   </div>
                 </li>
               </ul>
@@ -355,7 +357,7 @@
               </h3>
               <p class="experiences__item-text">
                 Maintained a consistent learning schedule, successfully accomplishing objectives,
-                which strengthened my self-discipline and perseverance
+                which strengthened my self-discipline and perseverance.
               </p>
             </li>
             <li class="experiences__item">
@@ -364,7 +366,7 @@
               </h3>
               <p class="experiences__item-text">
                 Through teamwork on collaborative projects with fellow developers, I gained valuable
-                experience in effective communication and cooperation
+                experience in effective communication and cooperation.
               </p>
             </li>
             <li class="experiences__item">
@@ -373,7 +375,7 @@
               </h3>
               <p class="experiences__item-text">
                 Organized and streamlined workflows, distributing tasks efficiently and ensuring
-                their timely completion
+                their timely completion.
               </p>
             </li>
             <li class="experiences__item">
@@ -546,7 +548,7 @@
           <b class="form-info"
             >Send me <span class="form-info--accent">an email</span> with your proposals</b
           >
-          <form class="form">
+          <form class="form" action="https://formspree.io/f/xwkdyjnn" method="POST">
             <div class="form-fields">
               <div class="form-field">
                 <label for="name" class="form-label">Your name*</label>
@@ -578,7 +580,6 @@
                 id="message"
                 class="form-textarea form-input"
                 placeholder="Write your message here"
-                required
               ></textarea>
             </div>
             <button type="submit" class="form-button button">send message</button>
@@ -595,7 +596,7 @@
           </svg>
         </button>
         <b class="modal__title">Email me if you have any questions</b>
-        <form class="modal__form modal-form">
+        <form class="modal__form modal-form" action="https://formspree.io/f/xwkdyjnn" method="POST">
           <div class="modal-form__field">
             <label for="name" class="modal-form__contact-label">Name</label>
             <div class="modal-form__input-wrap">

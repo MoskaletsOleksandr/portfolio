@@ -41,12 +41,16 @@
 
 .footer__contact-type {
     margin-bottom: 9px;
-
+    line-height: normal;
+    letter-spacing: -0.02em;
     font-size: 16px;
     color: var(--light-text-color);
 }
 
 .footer__contact-detail {
+    line-height: normal;
+    letter-spacing: -0.02em;
+    font-size: 14px;
     color: var(--primary-text-color);
 }
 

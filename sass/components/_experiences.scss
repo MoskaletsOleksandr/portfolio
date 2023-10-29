@@ -46,8 +46,11 @@
 }
 
 .experiences__item-title {
+    font-family: var(--text-font);
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    line-height: 1.88;
     margin-bottom: 12px;
 
     &--end{
@@ -64,4 +67,11 @@
     color: var(--accent-text-color);
     font-size: 40px;
     font-weight: 400;
+}
+
+.experiences__item-text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.71;
+    letter-spacing: -0.02em;
 }

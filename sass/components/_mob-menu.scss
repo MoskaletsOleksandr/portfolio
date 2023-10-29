@@ -28,10 +28,6 @@
 }
 
 .mob-menu__btn--open {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,9 +83,11 @@
 }
 
 .mob-nav__link {
-    font-size: 30px;
-    font-weight: 700;
-    color: whitesmoke;
+    font-family: var(--heading-font);
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 4%;
+    color: var(--light-title-color);
     text-transform: uppercase;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
         
