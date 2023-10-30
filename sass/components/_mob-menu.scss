@@ -34,7 +34,7 @@
     width: 47px;
     height: 35px;
     background-color: transparent;
-    border: 2px solid #57595d;
+    border: 2px solid var(--accent-title-color);
     border-radius: 2px;
 
     @include desktop {
@@ -43,7 +43,7 @@
 }
 
 .mob-menu__icon--open {
-    fill: #57595d;
+    fill: var(--accent-title-color);
 }
 
 .mob-menu__btn--close{
@@ -57,13 +57,13 @@
     width: 47px;
     height: 35px;
     background-color: transparent;
-    border: 2px solid #57595d;
+    border: 2px solid var(--accent-title-color);
     border-radius: 2px;
 }
 
 
 .mob-menu__icon--close {
-    fill: #57595d;
+    fill: var(--accent-title-color);
 }
 
 .mob-menu {

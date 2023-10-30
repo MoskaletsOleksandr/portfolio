@@ -1,9 +1,9 @@
 .about__content {
     display: flex;
     flex-direction: column;
-    gap: 75px;
+    gap: 30px;
 
-    @include desktop {
+    @include tablet {
         flex-direction: row;
         gap: 65px;
     }
@@ -114,10 +114,11 @@
     font-weight: 400;
     color: var(--dark-title-color);
 
-    margin-top: 75px;
+    margin-top: 55px;
 
     @include desktop {
         font-size: 32px;
+        margin-top: 75px;
     }
 }
 

@@ -261,7 +261,7 @@ body {
   width: 47px;
   height: 35px;
   background-color: transparent;
-  border: 2px solid #57595d;
+  border: 2px solid var(--accent-title-color);
   border-radius: 2px;
 }
 @media (min-width: 1200px) {
@@ -271,7 +271,7 @@ body {
 }
 
 .mob-menu__icon--open {
-  fill: #57595d;
+  fill: var(--accent-title-color);
 }
 
 .mob-menu__btn--close {
@@ -284,12 +284,12 @@ body {
   width: 47px;
   height: 35px;
   background-color: transparent;
-  border: 2px solid #57595d;
+  border: 2px solid var(--accent-title-color);
   border-radius: 2px;
 }
 
 .mob-menu__icon--close {
-  fill: #57595d;
+  fill: var(--accent-title-color);
 }
 
 .mob-menu {
@@ -383,11 +383,24 @@ body {
 }
 
 .hero {
+  margin: 0 auto;
+  max-width: 1600px;
+  height: 675px;
   background-color: var(--secondary-background-color);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(47, 48, 58, 0.1)), url(../images/hero-picture.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(47, 48, 58, 0.1)), url(../images/hero-tablet-1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(47, 48, 58, 0.1)), url(../images/hero-desktop-1x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(47, 48, 58, 0.1)), url(../images/hero-desktop-2x.jpg);
+  }
 }
 
 .hero-container {
@@ -560,9 +573,9 @@ body {
 .about__content {
   display: flex;
   flex-direction: column;
-  gap: 75px;
+  gap: 30px;
 }
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .about__content {
     flex-direction: row;
     gap: 65px;
@@ -671,11 +684,12 @@ body {
   font-size: 24px;
   font-weight: 400;
   color: var(--dark-title-color);
-  margin-top: 75px;
+  margin-top: 55px;
 }
 @media (min-width: 1200px) {
   .about__subtitle {
     font-size: 32px;
+    margin-top: 75px;
   }
 }
 
@@ -1675,7 +1689,7 @@ body {
 }
 
 .skills__title {
-  margin-bottom: 45px;
+  margin-bottom: 25px;
 }
 @media (min-width: 1200px) {
   .skills__title {
@@ -1850,7 +1864,7 @@ body {
 }
 
 .experiences__title {
-  margin-bottom: 75px;
+  margin-bottom: 25px;
 }
 @media (min-width: 1200px) {
   .experiences__title {
